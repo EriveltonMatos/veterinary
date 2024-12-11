@@ -6,13 +6,24 @@ export default {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+
+
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      fontFamily: {
+        primary: "var(--font-bebas)",
+        secondary: "var(--font-inter)",
       },
+      colors: {
+        primary: "#10151F",
+        secondary: "#475467",
+        Accent: "#7edad2",
+        hover: "#79d3cc",
+      },
+    boxShadow: {
+      custom: "0px 14px 54px rgba(0,0,0,0.1)",
     },
   },
+},
   plugins: [],
 } satisfies Config;
