@@ -4,17 +4,17 @@ import arrow from "../assets/hero/arrow.svg";
 import { BsArrowDownCircle } from "react-icons/bs";
 
 export default function Hero() {
+
+  const animals = [
+    { id: 1, name: "cachorro", image: arrow.src}
+  ]
+
   return (
     <section className="min-h-screen relative bg-gradient-to-br from-Accent/5 to-Accent/10 overflow-hidden">
-      {/* Decorative background elements */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,255,255,0.1),transparent)] pointer-events-none" />
-      <div className="absolute top-20 left-10 w-64 h-64 bg-Accent/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-20 right-10 w-96 h-96 bg-Accent/10 rounded-full blur-3xl" />
-
-      <div className="container mx-auto h-full relative">
+      <div className=" mx-auto h-full relative">
         <div className="grid md:grid-cols-2 gap-8 h-full items-center pt-20 pb-8">
           {/* Left content */}
-          <div className="relative z-20 flex flex-col items-center md:items-start text-center md:text-left space-y-6 px-4">
+          <div className="relative z-20 flex flex-col items-center md:items-start text-center md:text-left space-y-6 px-4 ml-20">
             <div className="inline-block">
               <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold tracking-tighter">
                 <span className="text-Accent hover:text-Accent/90 transition-colors duration-300">
@@ -66,12 +66,12 @@ export default function Hero() {
               </div>
 
               {/* Main image */}
-              <div className="absolute w-[90%] h-[95%] bottom-0 left-[5%] transition-transform duration-500 hover:scale-105">
+              <div className="absolute w-[90%] h-[100%] bottom-0 left-[5%] transition-transform duration-500 hover:scale-105">
                 <Image
                   src={heroImage}
                   fill
                   priority
-                  className="object-contain"
+                  className="object-contain "
                   alt="Dra. Glenda Karollyne"
                 />
               </div>

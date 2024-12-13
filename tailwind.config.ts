@@ -17,7 +17,7 @@ export default {
       colors: {
         primary: "#10151F",
         secondary: "#475467",
-        Accent: "#7edad2",
+        Accent: "#65b0aa",
         hover: "#79d3cc",
       },
     boxShadow: {
