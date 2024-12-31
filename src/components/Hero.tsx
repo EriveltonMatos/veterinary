@@ -4,14 +4,11 @@ import arrow from "../assets/hero/arrow.svg";
 import { BsArrowDownCircle } from "react-icons/bs";
 
 export default function Hero() {
-
-  const animals = [
-    { id: 1, name: "cachorro", image: arrow.src}
-  ]
+  const animals = [{ id: 1, name: "cachorro", image: arrow.src }];
 
   return (
     <section className="min-h-screen relative bg-gradient-to-br from-Accent/5 to-Accent/10 overflow-hidden">
-      <div className=" mx-auto h-full relative">
+      <div className="mx-auto h-full relative">
         <div className="grid md:grid-cols-2 gap-8 h-full items-center pt-20 pb-8">
           {/* Left content */}
           <div className="relative z-20 flex flex-col items-center md:items-start text-center md:text-left space-y-6 px-4 ml-20">
@@ -25,7 +22,8 @@ export default function Hero() {
             </div>
 
             <p className="text-lg md:text-xl text-gray-700 max-w-lg leading-relaxed">
-              Cuidado veterinário personalizado com amor, dedicação e experiência profissional para seu melhor amigo.
+              Cuidado veterinário personalizado com amor, dedicação e
+              experiência profissional para seu melhor amigo.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
@@ -33,7 +31,7 @@ export default function Hero() {
                 Entre em contato!
                 <BsArrowDownCircle className="w-5 h-5 animate-bounce" />
               </button>
-              
+
               <button className="border-2 border-Accent text-Accent hover:bg-Accent/10 px-8 py-3 rounded-xl font-semibold transition-all duration-300">
                 Conheça nossos serviços
               </button>
@@ -42,8 +40,11 @@ export default function Hero() {
             {/* Social proof */}
             <div className="flex flex-col items-center md:items-start gap-2 pt-6">
               <div className="flex -space-x-4">
-                {[1,2,3,4].map((i) => (
-                  <div key={i} className="w-12 h-12 rounded-full bg-gray-200 border-2 border-white" />
+                {[1, 2, 3, 4].map((i) => (
+                  <div
+                    key={i}
+                    className="w-12 h-12 rounded-full bg-gray-200 border-2 border-white"
+                  />
                 ))}
               </div>
               <p className="text-sm text-gray-600">
@@ -59,9 +60,14 @@ export default function Hero() {
               <div className="absolute inset-0 opacity-10">
                 <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.2),transparent)]" />
                 <div className="grid grid-cols-8 gap-4 p-8 h-full">
-                  {Array(64).fill(null).map((_, i) => (
-                    <div key={i} className="aspect-square rounded-full bg-white/20" />
-                  ))}
+                  {Array(64)
+                    .fill(null)
+                    .map((_, i) => (
+                      <div
+                        key={i}
+                        className="aspect-square rounded-full bg-white/20"
+                      />
+                    ))}
                 </div>
               </div>
 
@@ -79,12 +85,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <BsArrowDownCircle className="w-10 h-10 text-Accent" />
-      </div>
     </section>
   );
-};
-  
+}
