@@ -37,7 +37,6 @@ export default function Hero() {
               </button>
             </div>
 
-            {/* Social proof */}
             <div className="flex flex-col items-center md:items-start gap-2 pt-6">
               <div className="flex -space-x-4">
                 {[1, 2, 3, 4].map((i) => (
@@ -53,10 +52,8 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right content */}
           <div className="relative h-[500px] md:h-[680px] w-full">
             <div className="absolute inset-0 bg-Accent rounded-l-[60px] overflow-hidden">
-              {/* Decorative patterns */}
               <div className="absolute inset-0 opacity-10">
                 <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.2),transparent)]" />
                 <div className="grid grid-cols-8 gap-4 p-8 h-full">
@@ -71,13 +68,12 @@ export default function Hero() {
                 </div>
               </div>
 
-              {/* Main image */}
               <div className="absolute w-[90%] h-[100%] bottom-0 left-[5%] transition-transform duration-500 hover:scale-105">
                 <Image
                   src={heroImage}
                   fill
                   priority
-                  className="object-contain "
+                  className="object-contain saturate-[1.5] brightness-110"
                   alt="Dra. Glenda Karollyne"
                 />
               </div>
